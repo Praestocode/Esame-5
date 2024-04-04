@@ -1,0 +1,160 @@
+@import "./variabili";
+
+#registrati{
+/*     min-height: 90% !important; */
+    height: fit-content !important;
+    max-width: 90% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    input{
+        background-color: $bgColor;
+        border: none;
+        border-radius: 2px;
+        max-width: 60% !important;
+        max-height: 30px !important;
+        color: $textColor;
+    }
+    .form-selection {
+        background-color: $bgColor;
+        border: none;
+        border-radius: 2px;
+        min-width: 60% !important;
+        min-height: 35px !important;
+        max-height: 35px !important;
+        padding: 5px !important;
+        color: $textColor !important;
+    }
+    .options{
+        background-color: $bgColor;
+        border: none;
+        border-radius: 2px;
+        min-width: 60% !important;
+        min-height: 35px !important;
+        max-height: 35px !important;
+        padding: 5px !important;
+        color: white;
+    }
+    #formRegister{
+        padding: 2px !important;
+        .inputSpan{
+            display: flex;
+            span{
+                margin-left: 20px;
+                font-size: 1em;
+                color: $spanTextColor;
+                display: none;
+            }
+            #dateStandard{
+                padding: 8px !important;
+            }
+            #dateStandard:focus{
+                color: white;
+            }
+        }
+        #divButtons{
+            display: flex;
+            justify-content: space-around;
+            button{
+                width: 30%;
+                border: none;
+                border-radius: 4px;
+                padding: 4px;
+                font-family: sans-serif;
+            }
+            #backButton{
+                background-color: $textColor;
+                color: white;
+            }
+            #confirmButton{
+                background-color: $pinkCode;
+                color: white;
+            }
+        }
+        .labelDiv{
+            max-height: 40px;
+            max-width: 60% !important;
+            .warning{
+                font-size: 1em;
+                margin-top: 5px;
+                display: none;
+            }
+        }
+    }
+}
+#registrati input::placeholder {
+    color: $textColor;
+}
+#mainContentSub{
+/*     min-height: 80% !important; */
+    min-height: 1400px !important;
+}
+
+
+
+@media screen and (max-width: 850px){
+    .warning{
+        font-size: 0.7em !important;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px){
+    #mainContentSub{
+        /*     min-height: 80% !important; */
+            min-height: 1450px !important;
+            #formRegister{
+                padding: 3px;
+                .inputSpan{
+                    display: flex;
+                    flex-direction: column;
+                    input{
+                        min-width: 100% !important;
+                    }
+                    span{
+                        margin-left: 0px !important;
+                        font-size: 0.9em;
+                        padding: 4px;
+                        color: $spanTextColor !important;
+                    }
+                }
+                #divButtons{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    button{
+                        width: 80%;
+                        margin: 4px;
+                    }
+                }
+                .labelDiv{
+                    min-width: 100% !important;
+                }
+            }
+    }
+}
+
+
+@media screen and (max-width: 430px){
+    #mainContentSub{
+        min-height: 1300px !important;
+        #registrati{
+            min-width: 90% !important;
+    /*         min-height: 90% !important; */
+            min-height: fit-content !important;
+            padding: 3px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 330px){
+    #mainContentSub{
+        min-height: 1350px !important;
+        .warning{
+            font-size: 0.65em !important;
+        }
+    }
+}

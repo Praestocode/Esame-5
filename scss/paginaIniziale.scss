@@ -1,0 +1,118 @@
+@import "./variabili";
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-color: #212529 !important;
+    .main{
+        min-height: 60% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        #imgIndex{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        #registrati{
+            min-height: 60%;
+            min-width: 70%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(43, 48, 53, 0.9);
+            #divTitolo{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                text-justify: auto;
+                color: white;
+            }
+            #divPar{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: $textColor;
+            }
+            #divForm{
+                padding: 2px;
+                form{
+                    padding: 2px;
+                    display: flex;
+                    justify-content: center;
+                    #inputEmail{
+                        width: 40% !important;
+                        margin: 4px;
+                        border-radius: 4px;
+                        color: $textColor;
+                        border: none;
+                        background-color: $bgColor;
+                    }
+                    #registerBtn{
+                        max-width: 250px !important;
+                        margin: 4px;
+                        background-color: $pinkCode;
+                        color: white;
+                        font-family: sans-serif;
+                        border-radius: 6px;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        height: 100%;
+        color: $textColor;
+        display: flex;
+        flex-direction: column;
+        #firstRow{
+            min-height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            ul{
+                padding: 2px;
+                display: flex;
+                justify-content: space-around;
+                list-style-type: none;
+                a{
+                    text-decoration: none;
+                    color: $textColor;
+                }
+            }
+        }
+        #secondRow{
+            min-height: 20%;
+            text-align: center;
+            #imgFooter{
+                max-height: 20px;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 768px){
+    #formSub{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        #inputEmail{
+            max-width: 70% !important;
+        }
+        #registerBtn{
+            max-width: 50% !important;
+        }
+    }
+}

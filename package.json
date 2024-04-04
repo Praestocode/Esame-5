@@ -1,0 +1,16 @@
+{
+  "name": "esame-5---def",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Virgilio",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.12.2",
+    "rxjs": "^7.8.1"
+  }
+}

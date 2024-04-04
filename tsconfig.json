@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "moduleResolution": "node",
+      "target": "ES6",
+      "outDir": "dirJS",
+      "lib": [
+        "ES2015", "DOM"
+      ]
+    }
+  }
